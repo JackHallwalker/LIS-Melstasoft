@@ -189,6 +189,7 @@ namespace LegalSystemWeb
                             caseMasterList.Add(caseMaster);
                         }
                     }
+                    ViewState["ListCaseO"] = caseMasterList;
 
                 }
                 else
@@ -202,6 +203,7 @@ namespace LegalSystemWeb
                             caseMasterList.Add(caseMaster);
                         }
                     }
+                    ViewState["ListCaseC"] = caseMasterList;
                 }
                 datatablesSimple.DataSource = caseMasterList;
                 datatablesSimple.DataBind();
